@@ -6,7 +6,7 @@ on:
       environment:
         description: "Environment"
         type: environment
-        required: true
+        required: false
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.inputs.environment }}
